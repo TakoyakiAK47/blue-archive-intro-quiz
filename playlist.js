@@ -185,7 +185,7 @@ const playlist = [
   { title: "0k@eri", videoId: "I7A-xuDS-rA" },
   { title: "Realm Rumble", videoId: "iKfi8TvQThQ" },
   { title: "HIGH5LANDER", videoId: "6ITgnMiM2DU" },
-  { title: "- Train Showdown", videoId: "xFQ-g_cJDAE" },
+  { title: "Train Showdown", videoId: "xFQ-g_cJDAE" },
   { title: "Sudden Onset Disaster", videoId: "wTfRrbi72uw" },
   { title: "Achromatic Prism", videoId: "Nw-FTURpHek" },
   { title: "U-n.I", videoId: "bGicz6yyFQc" },
