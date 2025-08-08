@@ -37,8 +37,8 @@ function showModeSelection() {
       answeredVideos = [];
 
       
-  player.mute();      
-  player.playVideo();  
+      player.mute();      
+      player.playVideo();  
      
       loadNextQuiz();
     };
