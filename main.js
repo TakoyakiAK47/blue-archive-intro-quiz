@@ -7,7 +7,7 @@ let totalQuestions = 0;
 const maxQuestions = 10;
 let answeredVideos = [];
 let timer = null;
-let mode = 'normal'; // 'normal' or 'timed'
+let mode = 'normal'; 
 
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
@@ -36,9 +36,9 @@ function showModeSelection() {
       totalQuestions = 0;
       answeredVideos = [];
 
-      // 🔽 ユーザー操作のタイミングで無音動画を再生して許可を得る
-  player.mute();       // 一応ミュート
-  player.playVideo();  // これが重要！
+      
+  player.mute();      
+  player.playVideo();  
      
       loadNextQuiz();
     };
@@ -70,7 +70,7 @@ function loadNextQuiz() {
   document.getElementById('control-buttons').style.display = 'flex';
 
   let available = playlist.filter(p => !answeredVideos.includes(p.videoId));
-  if (available.length === 0) available = playlist; // fallback
+  if (available.length === 0) available = playlist; 
 
   const random = available[Math.floor(Math.random() * available.length)];
   correctAnswer = random.title;
