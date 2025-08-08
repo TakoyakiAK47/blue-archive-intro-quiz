@@ -148,6 +148,6 @@ function updateScore() {
 }
 
 document.getElementById('volumeSlider').addEventListener('input', (e) => {
-  const vol = parseInt(e.target.value, 5);
+  const vol = parseInt(e.target.value, 10);
   if (player && player.setVolume) player.setVolume(vol);
 });
