@@ -35,6 +35,11 @@ function showModeSelection() {
       score = 0;
       totalQuestions = 0;
       answeredVideos = [];
+
+      // 🔽 ユーザー操作のタイミングで無音動画を再生して許可を得る
+  player.mute();       // 一応ミュート
+  player.playVideo();  // これが重要！
+     
       loadNextQuiz();
     };
     container.appendChild(btn);
