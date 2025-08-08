@@ -7,7 +7,7 @@ let totalQuestions = 0;
 const maxQuestions = 10;
 let answeredVideos = [];
 let timer = null;
-let mode = 'normal'; 
+let mode = 'normal'; // 'normal' or 'timed'
 
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
@@ -65,7 +65,7 @@ function loadNextQuiz() {
   document.getElementById('control-buttons').style.display = 'flex';
 
   let available = playlist.filter(p => !answeredVideos.includes(p.videoId));
-  if (available.length === 0) available = playlist; 
+  if (available.length === 0) available = playlist; // fallback
 
   const random = available[Math.floor(Math.random() * available.length)];
   correctAnswer = random.title;
