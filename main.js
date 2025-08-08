@@ -42,7 +42,6 @@ function showModeSelection() {
      
       loadNextQuiz();
     };
- 
     container.appendChild(btn);
   });
 }
