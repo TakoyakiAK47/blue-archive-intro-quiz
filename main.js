@@ -35,11 +35,6 @@ function showModeSelection() {
       score = 0;
       totalQuestions = 0;
       answeredVideos = [];
-
-      
-      player.mute();      
-      player.playVideo();  
-     
       loadNextQuiz();
     };
     container.appendChild(btn);
